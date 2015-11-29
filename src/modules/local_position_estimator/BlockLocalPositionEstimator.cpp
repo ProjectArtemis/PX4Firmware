@@ -875,7 +875,7 @@ void BlockLocalPositionEstimator::correctFlow()
 	_time_last_flow = _sub_flow.get().timestamp;
 
 	float alpha = 0.4; // The closer alpha is to 1.0, the faster the moving average updates
-	// TODO use the Dt to calculate alpha
+	// TODO Better averaging system.
 
 	if (_sub_flow.get().integration_timespan > 0) {
 
